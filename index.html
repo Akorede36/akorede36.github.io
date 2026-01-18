@@ -9,51 +9,47 @@
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
-      background: radial-gradient(circle at top, #1f4037, #0f2027);
-      color: #fff;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
     }
 
     header {
-      padding: 30px 20px;
+      padding: 60px 20px 40px;
       text-align: center;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(6px);
     }
 
     header h1 {
-      margin: 0;
-      color: #ffd700;
-      font-size: 28px;
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 17px;
+      color: #dce7f3;
+      max-width: 600px;
+      margin: auto;
     }
 
     section {
       max-width: 900px;
       margin: auto;
-      padding: 25px;
+      padding: 20px;
     }
 
-    .about {
-      background: rgba(255,255,255,0.08);
-      border-radius: 15px;
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border-radius: 18px;
       padding: 25px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
 
-    .about h2 {
-      color: #ffd700;
+    .card h2 {
       margin-top: 0;
-    }
-
-    .cars {
-      background: rgba(0,0,0,0.6);
-      border-radius: 15px;
-      padding: 25px;
-      margin-bottom: 30px;
-    }
-
-    .cars h2 {
-      color: #ffd700;
-      margin-top: 0;
+      color: #00eaff;
     }
 
     ul {
@@ -63,34 +59,27 @@
     }
 
     .contact {
-      background: linear-gradient(135deg, #000, #1c1c1c);
-      border-radius: 18px;
-      padding: 30px;
       text-align: center;
-    }
-
-    .contact h2 {
-      color: #ffd700;
-      margin-bottom: 15px;
     }
 
     .whatsapp-btn {
       display: inline-block;
       margin-top: 15px;
-      padding: 14px 22px;
-      background: #25d366;
+      padding: 15px 26px;
+      background: linear-gradient(135deg, #25d366, #1ebe5d);
       color: #000;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 30px;
+      border-radius: 40px;
       font-size: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
 
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       font-size: 13px;
-      color: #ccc;
+      color: #cfd9e2;
     }
   </style>
 </head>
@@ -99,33 +88,28 @@
 
 <header>
   <h1>Akorede Cars Auto</h1>
+  <p>
+    Trusted dealer of Tokunbo and Nigerian used cars.
+    We help you inspect before you buy — clean deals only.
+  </p>
 </header>
 
 <section>
 
-  <div class="about">
-    <h2>About Us</h2>
-    <p>
-      Akorede Cars Auto deals in quality <b>Tokunbo and Nigerian used cars</b>.
-      We help customers inspect vehicles before purchase to ensure peace of mind.
-      Honest deals, clean cars, and trusted service.
-    </p>
-  </div>
-
-  <div class="cars">
+  <div class="card">
     <h2>Available Cars</h2>
     <ul>
       <li>Toyota Camry</li>
-      <li>Lexus ES / RX</li>
+      <li>Lexus ES</li>
+      <li>Lexus RX</li>
       <li>Mercedes-Benz C-Class</li>
       <li>Mercedes-Benz E-Class</li>
       <li>Toyota Corolla</li>
       <li>Toyota Highlander</li>
-      <li>Lexus GX 460</li>
     </ul>
   </div>
 
-  <div class="contact">
+  <div class="card contact">
     <h2>Contact Us</h2>
     <p>📍 Ikorodu, Lagos State</p>
     <p>📞 0903 166 1636</p>
