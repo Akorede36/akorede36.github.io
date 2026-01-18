@@ -9,64 +9,73 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f0f0f;
+  background: #0b0b0b;
   color: #fff;
 }
 
+/* HEADER */
 header {
-  background: linear-gradient(to right, #000000, #1a1a1a);
+  background: #000;
   padding: 25px;
   text-align: center;
 }
 
 header h1 {
-  margin: 0;
   color: #f5c518;
+  margin: 0;
 }
 
 header p {
   color: #ccc;
 }
 
+/* MAIN */
 section {
-  padding: 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
+  padding: 20px;
 }
 
+/* CARD */
 .card {
-  background: #1b1b1b;
-  border-radius: 12px;
+  background: #161616;
+  border-radius: 14px;
   padding: 15px;
   margin-bottom: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
 }
 
 .card img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: 12px;
 }
 
-h2 {
-  color: #f5c518;
+/* SOLD BADGE */
+.sold {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: red;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
   background: #25d366;
   color: #000;
-  padding: 12px 20px;
+  padding: 10px 18px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   margin-top: 10px;
 }
 
-.btn:hover {
-  background: #1ebe5d;
-}
-
+/* CONTACT */
 .contact {
   background: #000;
   border-radius: 15px;
@@ -74,12 +83,28 @@ h2 {
   text-align: center;
 }
 
-.contact a {
-  color: #25d366;
+/* FLOATING WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  font-size: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.8);
 }
 
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
@@ -92,21 +117,21 @@ footer {
 
 <header>
   <h1>Akorede Cars Auto</h1>
-  <p>Trusted Tokunbo & Brand New Cars in Nigeria</p>
+  <p>Tokunbo & Brand New Cars | Ikorodu, Lagos</p>
 </header>
 
 <section>
 
 <!-- ABOUT -->
 <div class="card">
-  <h2>About Us</h2>
+  <h2 style="color:#f5c518;">About Us</h2>
   <p>
-    Akorede Cars Auto is a reliable Nigerian car dealership based in Ikorodu, Lagos.
-    We deal in clean Tokunbo and brand new vehicles at affordable prices.
+    Akorede Cars Auto is a trusted car dealer based in Ikorodu, Lagos.
+    We sell clean Tokunbo and brand new cars only.
   </p>
   <p>
-    Customer satisfaction and transparency is our priority.
-    No stories, no hidden issues.
+    We also assist customers with car inspection before purchase.
+    No accident cars. No stories.
   </p>
 
   <a class="btn" href="https://wa.me/2349031661636" target="_blank">
@@ -114,42 +139,37 @@ footer {
   </a>
 </div>
 
-<!-- CAMRY -->
+<!-- CAR LISTINGS -->
+
 <div class="card">
-  <h2>Toyota Camry</h2>
+  <span class="sold">SOLD</span>
+  <h3>Toyota Camry (Tokunbo)</h3>
   <img src="images/camry.jpg" alt="Toyota Camry Nigeria">
-  <a class="btn" href="https://wa.me/2349031661636" target="_blank">Ask Price</a>
 </div>
 
-<!-- LEXUS -->
 <div class="card">
-  <h2>Lexus</h2>
+  <h3>Lexus RX 350</h3>
   <img src="images/lexus.jpg" alt="Lexus Nigeria">
   <a class="btn" href="https://wa.me/2349031661636" target="_blank">Ask Price</a>
 </div>
 
-<!-- BENZ -->
 <div class="card">
-  <h2>Mercedes-Benz SUV</h2>
+  <span class="sold">SOLD</span>
+  <h3>Mercedes-Benz SUV</h3>
   <img src="images/benz.jpg" alt="Mercedes Benz Nigeria">
+</div>
+
+<div class="card">
+  <h3>Toyota Corolla</h3>
+  <img src="images/corolla.jpg" alt="Toyota Corolla Nigeria">
   <a class="btn" href="https://wa.me/2349031661636" target="_blank">Ask Price</a>
 </div>
 
 <!-- CONTACT -->
 <div class="contact">
-  <h2>Contact Us</h2>
-
-  <p>
-    📞 <a href="tel:09031661636">0903 166 1636</a>
-  </p>
-
-  <p>
-    📍 Ikorodu, Lagos State
-  </p>
-
-  <a class="btn" href="https://wa.me/2349031661636" target="_blank">
-    Message Us on WhatsApp
-  </a>
+  <h2 style="color:#f5c518;">Contact Us</h2>
+  <p>📞 <a href="tel:09031661636" style="color:#25d366;">0903 166 1636</a></p>
+  <p>📍 Ikorodu, Lagos State</p>
 </div>
 
 </section>
@@ -157,6 +177,11 @@ footer {
 <footer>
   © 2026 Akorede Cars Auto. All rights reserved.
 </footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float" href="https://wa.me/2349031661636" target="_blank">
+  <img src="images/whatsapp-white.png" alt="WhatsApp">
+</a>
 
 </body>
 </html>
