@@ -1,153 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Akorede Cars Auto</title>
-  <style><style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    color: #fff;
-  }
 
-  header {
-    padding: 20px;
-    text-align: center;
-    background: rgba(0,0,0,0.4);
-  }
-
-  section {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-
-  .card {
-    background: rgba(0,0,0,0.4);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-  }
-
-  .btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #25D366;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-  }
-
-  /* ===== CAR GALLERY ===== */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-  }
-
-  .car {
-    background: rgba(0,0,0,0.4);
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-  }
-
-  .car img {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .car p {
-    margin-top: 8px;
-    font-weight: bold;
-  }
-</style>
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      background: #f2f4f7;
+      color: #222;
     }
+
     header {
-      padding: 20px;
+      background: #0b1c2d;
+      color: white;
       text-align: center;
-      background: rgba(0,0,0,0.4);
+      padding: 25px 15px;
     }
+
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 26px;
     }
+
     header p {
-      margin: 5px 0 0;
-      font-size: 16px;
-    }<div class="card">
-  <h2>Available Cars</h2>
+      margin-top: 8px;
+      font-size: 15px;
+      opacity: 0.9;
+    }
 
-  <div class="gallery">
-
-    <div class="car">
-      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Toyota Camry">
-      <p>Toyota Camry (Tokunbo)</p>
-      <a class="btn" href="https://wa.me/2349031661636?text=Hello%20I%20am%20interested%20in%20Toyota%20Camry" target="_blank">
-        Chat on WhatsApp
-      </a>
-    </div>
-
-    <div class="car">
-      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2" alt="Toyota Corolla">
-      <p>Toyota Corolla (Brand New)</p>
-      <a class="btn" href="https://wa.me/2349031661636?text=Hello%20I%20am%20interested%20in%20Toyota%20Corolla" target="_blank">
-        Chat on WhatsApp
-      </a>
-    </div>
-
-    <div class="car">
-      <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738" alt="Lexus RX 350">
-      <p>Lexus RX 350 (Tokunbo)</p>
-      <a class="btn" href="https://wa.me/2349031661636?text=Hello%20I%20am%20interested%20in%20Lexus%20RX%20350" target="_blank">
-        Chat on WhatsApp
-      </a>
-    </div>
-
-  </div>
-</div>
     section {
-      padding: 20px;
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
-    }
-    .card {
-      background: rgba(255,255,255,0.1);
       padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .car {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .car img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
       border-radius: 10px;
-      margin-bottom: 20px;
     }
-    h2 {
-      margin-top: 0;
-      color: #ffd700;
+
+    .car p {
+      font-weight: bold;
+      margin: 12px 0;
     }
+
     .btn {
       display: inline-block;
-      margin-top: 10px;
+      background: #25d366;
+      color: white;
       padding: 12px 18px;
-      background: #ffd700;
-      color: #000;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
     }
+
     footer {
       text-align: center;
       padding: 15px;
-      background: rgba(0,0,0,0.4);
       font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -156,55 +99,53 @@
   </header>
 
   <section>
+
     <div class="card">
       <h2>About Us</h2>
       <p>
-        Akorede Cars Auto is a trusted car sales business based in Ikorodu, Lagos State.
-        We specialize in Tokunbo (foreign used) and brand new vehicles.
-        We also help customers inspect cars before purchase to ensure quality and peace of mind.if you need any kind of your choice both tokunbo and new contact us
+        Akorede Cars Auto is a trusted car dealer based in Ikorodu, Lagos.
+        We specialize in Tokunbo (foreign used) and brand new cars.
+        We also help customers inspect cars before purchase.
       </p>
     </div>
 
     <div class="card">
-      <h2>What We Sell</h2>
-      <ul<div class="card">
-  <h2>Available Cars</h2>
+      <h2>Available Cars</h2>
 
-  <div class="gallery">
-    <div class="car">
-      <img src="https://via.placeholder.com/300x200?text=Toyota+Camry" alt="Toyota Camry">
-      <p>Toyota Camry – Tokunbo</p>
-    </div>
+      <div class="gallery">
 
-    <div class="car">
-      <img src="https://via.placeholder.com/300x200?text=Honda+Accord" alt="Honda Accord">
-      <p>Honda Accord – Foreign Used</p>
-    </div>
+        <div class="car">
+          <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" alt="Lexus Nigeria Tokunbo">
+          <p>Lexus (Tokunbo)</p>
+          <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
+        </div>
 
-    <div class="car">
-      <img src="https://via.placeholder.com/300x200?text=Lexus+RX350" alt="Lexus RX 350">
-      <p>Lexus RX 350 – Clean</p>
-    </div>
-  </div>
-</div>>
-        <li>Tokunbo (Foreign Used) Cars</li>
-        <li>Brand New Cars</li>
-        <li>Car Inspection & Purchase Assistance</li>
-      </ul>
+        <div class="car">
+          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2" alt="Toyota Camry Tokunbo">
+          <p>Toyota Camry (Tokunbo)</p>
+          <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
+        </div>
+
+        <div class="car">
+          <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae" alt="Benz Tokunbo">
+          <p>Mercedes-Benz (Tokunbo)</p>
+          <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
+        </div>
+
+      </div>
     </div>
 
     <div class="card">
       <h2>Contact Us</h2>
       <p><strong>Phone:</strong> 0903 166 1636</p>
       <p><strong>Location:</strong> Ikorodu, Lagos State</p>
-      <a class="btn" href="tel:09031661636">Call Now</a>
-      <br><br>
       <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
     </div>
+
   </section>
 
   <footer>
-    © 2026 Akorede Cars Auto. All rights reserved.
+    © 2026 Akorede Cars Auto
   </footer>
 
 </body>
