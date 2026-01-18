@@ -1,202 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Akorede Cars Auto</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
     body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #ffffff;
-      min-height: 100vh;
     }
 
     .container {
-      width: 90%;
-      max-width: 1100px;
+      max-width: 900px;
       margin: auto;
-      padding: 50px 0;
+      padding: 30px 20px;
     }
 
-    /* HEADER */
-    .hero {
+    h1 {
       text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .hero h1 {
-      font-size: 40px;
+      font-size: 36px;
       margin-bottom: 10px;
     }
 
-    .hero p {
+    .subtitle {
+      text-align: center;
       font-size: 18px;
       opacity: 0.9;
+      margin-bottom: 40px;
     }
 
-    /* SECTION */
     .section {
-      margin-bottom: 60px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(10px);
     }
 
     .section h2 {
-      text-align: center;
-      margin-bottom: 25px;
-      font-size: 28px;
       color: #00f2ff;
-    }
-
-    /* CAR GRID */
-    .car-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .car-card {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 20px;
-      border-radius: 12px;
+      margin-bottom: 15px;
       text-align: center;
-      transition: transform 0.3s;
     }
 
-    .car-card:hover {
-      transform: translateY(-5px);
-    }
-
-    /* OFFER LIST */
-    .offer-list {
-      max-width: 700px;
-      margin: auto;
-      background: rgba(255,255,255,0.08);
-      padding: 25px;
-      border-radius: 15px;
-    }
-
-    .offer-list ul {
+    .car-list {
       list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    .offer-list li {
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
+    .car-list li {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 14px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      text-align: center;
+      font-size: 18px;
     }
 
-    .offer-list li:last-child {
-      border-bottom: none;
+    .about {
+      line-height: 1.7;
+      font-size: 16px;
+      text-align: center;
     }
 
-    /* CONTACT */
     .contact {
       text-align: center;
-      background: rgba(0,0,0,0.4);
-      padding: 40px 20px;
-      border-radius: 20px;
+      font-size: 18px;
     }
 
-    .contact a {
-      display: inline-block;
+    .whatsapp {
       margin-top: 15px;
+      display: inline-block;
       background: #25D366;
-      color: white;
-      padding: 15px 25px;
+      color: #fff;
+      padding: 14px 22px;
       border-radius: 30px;
       text-decoration: none;
-      font-size: 18px;
       font-weight: bold;
-    }
-
-    /* ABOUT */
-    .about {
-      max-width: 800px;
-      margin: auto;
-      background: rgba(255,255,255,0.07);
-      padding: 30px;
-      border-radius: 15px;
-      line-height: 1.6;
-      text-align: center;
     }
 
     footer {
       text-align: center;
       margin-top: 40px;
-      font-size: 14px;
       opacity: 0.7;
+      font-size: 14px;
     }
   </style>
 </head>
-<body>
 
+<body>
   <div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-      <h1>Akorede Cars Auto</h1>
-      <p>Trusted car dealer in Ikorodu, Lagos State</p>
-    </div>
+    <!-- HEADER -->
+    <h1>Akorede Cars Auto</h1>
+    <p class="subtitle">
+      Trusted car dealer in Ikorodu, Lagos State
+    </p>
 
-    <!-- CARS -->
-    <div class="section">
-      <h2>Nigerian Used Cars We Deal In</h2>
-
-      <div class="car-grid">
-        <div class="car-card">Toyota Camry</div>
-        <div class="car-card">Toyota Corolla</div>
-        <div class="car-card">Toyota Highlander</div>
-        <div class="car-card">Lexus ES</div>
-        <div class="car-card">Lexus RX</div>
-        <div class="car-card">Mercedes-Benz C-Class</div>
-        <div class="car-card">Mercedes-Benz E-Class</div>
-      </div>
-    </div>
-
-    <!-- OFFER -->
+    <!-- WHAT WE OFFER -->
     <div class="section">
       <h2>What We Offer</h2>
-
-      <div class="offer-list">
-        <ul>
-          <li>✔ Nigerian Used Cars (Clean & Verified)</li>
-          <li>✔ Foreign Used (Tokunbo) Cars</li>
-          <li>✔ Car Inspection Before Purchase</li>
-          <li>✔ Help to Find Any Type of Car You Want</li>
-          <li>✔ Car Shipping & Import from China</li>
-          <li>✔ Honest Deals & Trusted Service</li>
-        </ul>
-      </div>
+      <ul class="car-list">
+        <li>Foreign Tokunbo (First Body) Cars</li>
+        <li>Car Inspection & Honest Advice</li>
+        <li>Any Car on Request</li>
+        <li>Importation from China & Other Countries</li>
+        <li>Clean Deals Only</li>
+      </ul>
     </div>
 
-    <!-- ABOUT (BOTTOM AS YOU SAID) -->
+    <!-- CARS WE DEAL IN -->
+    <div class="section">
+      <h2>Cars We Deal In</h2>
+      <ul class="car-list">
+        <li>Toyota Camry</li>
+        <li>Toyota Corolla</li>
+        <li>Toyota Highlander</li>
+        <li>Lexus ES</li>
+        <li>Lexus RX</li>
+        <li>Mercedes-Benz C-Class</li>
+        <li>Mercedes-Benz E-Class</li>
+      </ul>
+    </div>
+
+    <!-- ABOUT US (BOTTOM) -->
     <div class="section">
       <h2>About Us</h2>
-
-      <div class="about">
+      <p class="about">
         Akorede Cars Auto is a trusted car dealer based in Ikorodu, Lagos State.
-        We specialize in Nigerian used cars, foreign used (Tokunbo) cars, and car importation.
-        Our goal is to help customers get clean cars with peace of mind through proper inspection
-        and honest dealings.
-      </div>
+        We specialize in Foreign Tokunbo (First Body) vehicles and car importation.
+        <br><br>
+        We help customers inspect cars properly before purchase and ensure every
+        deal is clean, transparent, and reliable.
+        <br><br>
+        Looking for a specific car? Just ask — we can source it for you.
+      </p>
     </div>
 
     <!-- CONTACT -->
-    <div class="section">
-      <div class="contact">
-        <h2>Contact Us 😊</h2>
-        <p>📍 Ikorodu, Lagos State</p>
+    <div class="section contact">
+      <h2>Contact Us 😊</h2>
+      <p>📍 Ikorodu, Lagos State</p>
 
-        <a href="https://wa.me/2349031661636" target="_blank">
-          💬 Chat on WhatsApp
-        </a>
-      </div>
+      <a class="whatsapp"
+         href="https://wa.me/2349031661636"
+         target="_blank">
+        💬 Chat on WhatsApp
+      </a>
     </div>
 
     <footer>
@@ -204,6 +158,5 @@
     </footer>
 
   </div>
-
 </body>
 </html>
