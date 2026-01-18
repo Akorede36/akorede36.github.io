@@ -2,130 +2,208 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Akorede Cars Auto</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akorede Cars Auto</title>
 
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      min-height: 100vh;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #ffffff;
+      min-height: 100vh;
     }
 
-    header {
-      padding: 60px 20px 40px;
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 0;
+    }
+
+    /* HEADER */
+    .hero {
       text-align: center;
+      margin-bottom: 60px;
     }
 
-    header h1 {
-      font-size: 36px;
+    .hero h1 {
+      font-size: 40px;
       margin-bottom: 10px;
-      color: #ffffff;
     }
 
-    header p {
-      font-size: 17px;
-      color: #dce7f3;
-      max-width: 600px;
-      margin: auto;
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
     }
 
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+    /* SECTION */
+    .section {
+      margin-bottom: 60px;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(12px);
-      border-radius: 18px;
-      padding: 25px;
+    .section h2 {
+      text-align: center;
       margin-bottom: 25px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      font-size: 28px;
+      color: #00f2ff;
     }
 
-    .card h2 {
-      margin-top: 0;
-      color: #00eaff;
+    /* CAR GRID */
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
 
-    ul {
-      padding-left: 20px;
-      line-height: 2;
-      font-size: 17px;
+    .car-card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
     }
 
+    .car-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* OFFER LIST */
+    .offer-list {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(255,255,255,0.08);
+      padding: 25px;
+      border-radius: 15px;
+    }
+
+    .offer-list ul {
+      list-style: none;
+    }
+
+    .offer-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .offer-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* CONTACT */
     .contact {
       text-align: center;
+      background: rgba(0,0,0,0.4);
+      padding: 40px 20px;
+      border-radius: 20px;
     }
 
-    .whatsapp-btn {
+    .contact a {
       display: inline-block;
       margin-top: 15px;
-      padding: 15px 26px;
-      background: linear-gradient(135deg, #25d366, #1ebe5d);
-      color: #000;
+      background: #25D366;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 30px;
       text-decoration: none;
+      font-size: 18px;
       font-weight: bold;
-      border-radius: 40px;
-      font-size: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255,255,255,0.07);
+      padding: 30px;
+      border-radius: 15px;
+      line-height: 1.6;
+      text-align: center;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 13px;
-      color: #cfd9e2;
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.7;
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Akorede Cars Auto</h1>
-  <p>
-    Trusted dealer of Tokunbo and Nigerian used cars.
-    We help you inspect before you buy — clean deals only.
-  </p>
-</header>
+  <div class="container">
 
-<section>
+    <!-- HERO -->
+    <div class="hero">
+      <h1>Akorede Cars Auto</h1>
+      <p>Trusted car dealer in Ikorodu, Lagos State</p>
+    </div>
 
-  <div class="card">
-    <h2>Available Cars</h2>
-    <ul>
-      <li>Toyota Camry</li>
-      <li>Lexus ES</li>
-      <li>Lexus RX</li>
-      <li>Mercedes-Benz C-Class</li>
-      <li>Mercedes-Benz E-Class</li>
-      <li>Toyota Corolla</li>
-      <li>Toyota Highlander</li>
-    </ul>
+    <!-- CARS -->
+    <div class="section">
+      <h2>Nigerian Used Cars We Deal In</h2>
+
+      <div class="car-grid">
+        <div class="car-card">Toyota Camry</div>
+        <div class="car-card">Toyota Corolla</div>
+        <div class="car-card">Toyota Highlander</div>
+        <div class="car-card">Lexus ES</div>
+        <div class="car-card">Lexus RX</div>
+        <div class="car-card">Mercedes-Benz C-Class</div>
+        <div class="car-card">Mercedes-Benz E-Class</div>
+      </div>
+    </div>
+
+    <!-- OFFER -->
+    <div class="section">
+      <h2>What We Offer</h2>
+
+      <div class="offer-list">
+        <ul>
+          <li>✔ Nigerian Used Cars (Clean & Verified)</li>
+          <li>✔ Foreign Used (Tokunbo) Cars</li>
+          <li>✔ Car Inspection Before Purchase</li>
+          <li>✔ Help to Find Any Type of Car You Want</li>
+          <li>✔ Car Shipping & Import from China</li>
+          <li>✔ Honest Deals & Trusted Service</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ABOUT (BOTTOM AS YOU SAID) -->
+    <div class="section">
+      <h2>About Us</h2>
+
+      <div class="about">
+        Akorede Cars Auto is a trusted car dealer based in Ikorodu, Lagos State.
+        We specialize in Nigerian used cars, foreign used (Tokunbo) cars, and car importation.
+        Our goal is to help customers get clean cars with peace of mind through proper inspection
+        and honest dealings.
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section">
+      <div class="contact">
+        <h2>Contact Us 😊</h2>
+        <p>📍 Ikorodu, Lagos State</p>
+
+        <a href="https://wa.me/2349031661636" target="_blank">
+          💬 Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 Akorede Cars Auto. All rights reserved.
+    </footer>
+
   </div>
-
-  <div class="card contact">
-    <h2>Contact Us</h2>
-    <p>📍 Ikorodu, Lagos State</p>
-    <p>📞 0903 166 1636</p>
-
-    <a class="whatsapp-btn"
-       href="https://wa.me/2349031661636"
-       target="_blank">
-       Chat on WhatsApp
-    </a>
-  </div>
-
-</section>
-
-<footer>
-  © 2026 Akorede Cars Auto. All rights reserved.
-</footer>
 
 </body>
 </html>
