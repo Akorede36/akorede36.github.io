@@ -1,152 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Akorede Cars Auto</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akorede Cars Auto</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f4f7;
-      color: #222;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #fff;
+}
 
-    header {
-      background: #0b1c2d;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
+header {
+    text-align: center;
+    padding: 25px;
+    background: #020617;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
+header h1 {
+    margin: 0;
+    font-size: 26px;
+}
 
-    header p {
-      margin-top: 8px;
-      font-size: 15px;
-      opacity: 0.9;
-    }
+header p {
+    margin-top: 8px;
+    color: #cbd5f5;
+}
 
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
-    }
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 25px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
+.car-card {
+    background: #1e293b;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.car-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
 
-    .car {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+.car-card h2 {
+    padding: 15px;
+    margin: 0;
+}
 
-    .car img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
+.car-card p {
+    padding: 0 15px;
+    color: #e5e7eb;
+}
 
-    .car p {
-      font-weight: bold;
-      margin: 12px 0;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #25d366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+.btn {
+    display: block;
+    margin: 15px;
+    text-align: center;
+    background: #22c55e;
+    color: #000;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
+<header>
     <h1>AKOREDE CARS AUTO</h1>
-    <p>Tokunbo & Brand New Cars | Car Inspection Assistance</p>
-  </header>
+    <p>Tokunbo & Brand New Cars • Nigeria</p>
+</header>
 
-  <section>
+<div class="container">
 
-    <div class="card">
-      <h2>About Us</h2>
-      <p>
-        Akorede Cars Auto is a trusted car dealer based in Ikorodu, Lagos.
-        We specialize in Tokunbo (foreign used) and brand new cars.
-        We also help customers inspect cars before purchase.
-      </p>
+    <!-- Lexus -->
+    <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8">
+        <h2>Lexus RX 350 (Tokunbo)</h2>
+        <p>Clean Nigerian-used Lexus RX. Buy & drive. No issues.</p>
+        <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <h2>Available Cars</h2>
-
-      <div class="gallery">
-
-        <div class="car">
-          <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" alt="Lexus Nigeria Tokunbo">
-          <p>Lexus (Tokunbo)</p>
-          <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
-        </div>
-
-        <div class="car">
-          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2" alt="Toyota Camry Tokunbo">
-          <p>Toyota Camry (Tokunbo)</p>
-          <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
-        </div>
-
-        <div class="car">
-          <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae" alt="Benz Tokunbo">
-          <p>Mercedes-Benz (Tokunbo)</p>
-          <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
-        </div>
-
-      </div>
+    <!-- Toyota Camry -->
+    <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+        <h2>Toyota Camry (Tokunbo)</h2>
+        <p>Fuel efficient. Strong engine. Nigerian road tested.</p>
+        <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <h2>Contact Us</h2>
-      <p><strong>Phone:</strong> 0903 166 1636</p>
-      <p><strong>Location:</strong> Ikorodu, Lagos State</p>
-      <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
+    <!-- Benz -->
+    <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9">
+        <h2>Mercedes Benz (Tokunbo)</h2>
+        <p>Clean interior. Strong suspension. Lagos-ready.</p>
+        <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
     </div>
 
-  </section>
-
-  <footer>
-    © 2026 Akorede Cars Auto
-  </footer>
+</div>
 
 </body>
 </html>
