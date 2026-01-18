@@ -1,112 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akorede Cars Auto</title>
+  <meta charset="UTF-8">
+  <title>AKOREDE CARS AUTO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: #fff;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
 
-header {
-    text-align: center;
-    padding: 25px;
-    background: #020617;
-}
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-header h1 {
-    margin: 0;
-    font-size: 26px;
-}
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
 
-header p {
-    margin-top: 8px;
-    color: #cbd5f5;
-}
+    header p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #ccc;
+    }
 
-.container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-}
+    section {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-.car-card {
-    background: #1e293b;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-}
+    .about {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 30px;
+    }
 
-.car-card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-}
+    .about h2 {
+      margin-top: 0;
+    }
 
-.car-card h2 {
-    padding: 15px;
-    margin: 0;
-}
+    .cars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
 
-.car-card p {
-    padding: 0 15px;
-    color: #e5e7eb;
-}
+    .car {
+      background: white;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-.btn {
-    display: block;
-    margin: 15px;
-    text-align: center;
-    background: #22c55e;
-    color: #000;
-    padding: 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-</style>
+    .car img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .car p {
+      padding: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .contact {
+      background: #111;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 6px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <h1>AKOREDE CARS AUTO</h1>
-    <p>Tokunbo & Brand New Cars • Nigeria</p>
+  <h1>AKOREDE CARS AUTO</h1>
+  <p>Tokunbo & Brand New Cars • Ikorodu, Lagos State</p>
 </header>
 
-<div class="container">
+<section class="about">
+  <h2>About Us</h2>
+  <p>
+    Akorede Cars Auto is a trusted car dealership based in Ikorodu, Lagos State.
+    We specialize in the sales of carefully selected Tokunbo (foreign-used) and
+    brand new vehicles.
+  </p>
+  <p>
+    Our goal is to help customers get clean, reliable, and affordable cars with
+    full honesty and transparency. We also assist our customers with inspection
+    and guidance to ensure you make the right purchase.
+  </p>
+  <p>
+    <strong>
+      Contact us for any kind of car you want to purchase. We might not be able
+      to post all cars, but they are 100% available 😀 foreign use brands new Nigeria use first body, were trusted 
+    </strong>
+  </p>
+</section>
 
-    <!-- Lexus -->
-    <div class="car-card">
-        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8">
-        <h2>Lexus RX 350 (Tokunbo)</h2>
-        <p>Clean Nigerian-used Lexus RX. Buy & drive. No issues.</p>
-        <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
+<section>
+  <h2>Available Cars</h2>
+
+  <div class="cars">
+
+    <div class="car">
+      <img src="benz-gla.jpg" alt="Mercedes Benz GLA">
+      <p>Mercedes-Benz GLA</p>
     </div>
 
-    <!-- Toyota Camry -->
-    <div class="car-card">
-        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
-        <h2>Toyota Camry (Tokunbo)</h2>
-        <p>Fuel efficient. Strong engine. Nigerian road tested.</p>
-        <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
+    <div class="car">
+      <img src="pajero-front.jpg" alt="Mitsubishi Pajero">
+      <p>Mitsubishi Pajero</p>
     </div>
 
-    <!-- Benz -->
-    <div class="car-card">
-        <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9">
-        <h2>Mercedes Benz (Tokunbo)</h2>
-        <p>Clean interior. Strong suspension. Lagos-ready.</p>
-        <a class="btn" href="https://wa.me/2349031661636">Chat on WhatsApp</a>
+    <div class="car">
+      <img src="pajero-back.jpg" alt="Mitsubishi Pajero Back View">
+      <p>Mitsubishi Pajero (Back View)</p>
     </div>
 
+    <div class="car">
+      <img src="lexus-silver.jpg" alt="Lexus RX">
+      <p>Lexus RX</p>
+    </div>
+
+    <div class="car">
+      <img src="benz-blue.jpg" alt="Mercedes Benz">
+      <p>Mercedes-Benz</p>
+    </div>
+
+    <div class="car">
+      <img src="benz-brown.jpg" alt="Mercedes Benz SUV">
+      <p>Mercedes-Benz SUV</p>
+    </div>
+
+    <div class="car">
+      <img src="lexus-black.jpg" alt="Lexus">
+      <p>Lexus</p>
+    </div>
+
+    <div class="car">
+      <img src="toyota-camry.jpg" alt="Toyota Camry">
+      <p>Toyota Camry</p>
+    </div>
+
+  </div>
+</section>
+
+<div class="contact">
+  <h2>Contact Us</h2>
+  <p>📞 0903 166 1636</p>
+  <p>📍 Ikorodu, Lagos State</p>
 </div>
+
+<footer>
+  © 2026 Akorede Cars Auto. All rights reserved.
+</footer>
 
 </body>
 </html>
